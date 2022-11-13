@@ -1,0 +1,11 @@
+@import '../molecules/heading-group.css';
+@import '../molecules/selects-list.css';
+@import '../molecules/products-list.css';
+
+.category__heading-group {
+	margin-bottom: var(--heading-margin-bottom-primary);
+}
+
+.category__selects-list {
+	margin-bottom: var(--heading-margin-bottom-primary);
+}

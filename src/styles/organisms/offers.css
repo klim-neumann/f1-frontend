@@ -1,0 +1,5 @@
+@import '../molecules/products-list.css';
+
+.offers__heading {
+	margin-bottom: var(--heading-margin-bottom-secondary);
+}

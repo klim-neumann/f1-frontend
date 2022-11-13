@@ -1,0 +1,51 @@
+@import '../atoms/container.css';
+
+.partners__heading {
+	margin-bottom: var(--heading-margin-bottom-primary);
+}
+
+.partners__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@media (width < 728px) {
+	.partners__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 1rem;
+	}
+}
+
+@media (width >= 728px) {
+	.partners__list {
+		display: flex;
+		justify-content: center;
+		column-gap: 1rem;
+	}
+}
+
+.partners__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (width < 728px) {
+	.partners__img {
+		width: 8rem;
+	}
+}
+
+@media (728px <= width < 1024px) {
+	.partners__img {
+		width: 9rem;
+	}
+}
+
+@media (width >= 1024px) {
+	.partners__img {
+		width: 11rem;
+	}
+}

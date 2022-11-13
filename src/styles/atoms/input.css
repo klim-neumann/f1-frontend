@@ -1,0 +1,37 @@
+.input {
+	--input-padding-top-bottom: 0.5rem;
+
+	margin: 0;
+	background-color: transparent;
+	border: 0.125rem solid currentColor;
+	border-radius: var(--border-radius-primary);
+	padding: var(--input-padding-top-bottom) 0 var(--input-padding-top-bottom) 1rem;
+	color: currentColor;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.input--secondary {
+	--input-padding-top-bottom: 0.25rem;
+
+	width: 100%;
+	max-width: 11rem;
+	border-radius: var(--border-radius-secondary);
+	font-size: 0.875rem;
+	line-height: 1rem;
+}
+
+.input--tertiary {
+	border: none;
+	border-radius: 0;
+}
+
+@media (width < 1024px) {
+	.input--tertiary {
+		--input-padding-top-bottom: 0.25rem;
+	}
+}
+
+.input::placeholder {
+	color: var(--color-grey-primary);
+}

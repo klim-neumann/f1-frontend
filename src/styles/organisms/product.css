@@ -1,0 +1,111 @@
+@import '../atoms/container.css';
+@import '../atoms/heading.css';
+@import '../molecules/product-price.css';
+@import '../atoms/button.css';
+@import '../molecules/tables-list.css';
+
+@media (width < 728px) {
+	.product {
+		--product-info-padding: 0.5rem;
+	}
+}
+
+@media (width >= 728px) {
+	.product {
+		--product-info-padding: 1rem;
+	}
+}
+
+@media (width < 728px) {
+	.product__body {
+		display: flex;
+		flex-direction: column;
+		row-gap: var(--heading-margin-bottom-primary);
+	}
+}
+
+.product__info {
+	padding: var(--product-info-padding);
+	background-color: var(--color-dark-primary);
+}
+
+@media (width < 728px) {
+	.product__info {
+		border-radius: var(--border-radius-secondary);
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (width >= 728px) {
+	.product__info {
+		border-bottom: 0.0625rem solid var(--color-grey-primary);
+		border-radius: var(--border-radius-secondary) var(--border-radius-secondary) 0 0;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		column-gap: 2rem;
+	}
+}
+
+@media (width >= 728px) {
+	.product__first {
+		min-width: 0;
+		grid-column: 1 / 4;
+	}
+}
+
+.product__img {
+	width: 100%;
+	object-fit: contain;
+}
+
+@media (width < 728px) {
+	.product__img {
+		height: 18rem;
+	}
+}
+
+@media (width >= 728px) {
+	.product__img {
+		height: 21rem;
+	}
+}
+
+.product__second {
+	display: flex;
+	flex-direction: column;
+}
+
+.product__product-price {
+	align-self: flex-start;
+	margin-bottom: var(--heading-margin-bottom-primary);
+}
+
+@media (width >= 728px) {
+	.product__button {
+		align-self: flex-start;
+	}
+}
+
+.product__description {
+	padding: var(--product-info-padding);
+	background-color: var(--color-dark-primary);
+	display: flex;
+	flex-direction: column;
+}
+
+@media (width < 728px) {
+	.product__description {
+		border-radius: var(--border-radius-secondary);
+	}
+}
+
+@media (width >= 728px) {
+	.product__description {
+		border-radius: 0 0 var(--border-radius-secondary) var(--border-radius-secondary);
+	}
+}
+
+.product__heading--secondary {
+	margin-bottom: var(--heading-margin-bottom-primary);
+}

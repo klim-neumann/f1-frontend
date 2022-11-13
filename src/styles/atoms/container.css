@@ -1,0 +1,18 @@
+@media (width < 728px) {
+	.container {
+		padding: 0 0.5rem;
+	}
+}
+
+@media (width >= 728px) {
+	.container {
+		padding: 0 1rem;
+	}
+}
+
+@media (width >= 71rem) {
+	.container {
+		max-width: 71rem;
+		margin: 0 auto;
+	}
+}

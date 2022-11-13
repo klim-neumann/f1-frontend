@@ -1,0 +1,24 @@
+@import '../atoms/heading.css';
+@import '../atoms/subheading.css';
+
+.heading-group {
+	display: flex;
+	flex-direction: column;
+	row-gap: var(--heading-margin-bottom-primary);
+}
+
+.heading-group--max-width-primary {
+	width: 100%;
+}
+
+@media (width < 1440px) {
+	.heading-group--max-width-primary {
+		max-width: 29rem;
+	}
+}
+
+@media (width >= 1440px) {
+	.heading-group--max-width-primary {
+		max-width: 35rem;
+	}
+}

@@ -1,0 +1,43 @@
+:root {
+	--font-family-primary: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+	--background-image-gradient-primary: linear-gradient(360deg, #0E0E0E 54.08%, #2E1F2B 78.47%);
+
+	--color-light-primary: #FFF;
+	--color-light-secondary: #E4E4E4;
+
+	--color-grey-primary: #999999;
+	--color-grey-secondary: #CCCCCC;
+
+	--color-dark-primary: #262626;
+	--color-dark-secondary: #141113;
+	--color-dark-tertiary: #2B2B2B;
+
+	--color-pink-primary: #872371;
+
+	--heading-margin-bottom-primary: 1rem;
+	--heading-margin-bottom-secondary: 0.5rem;
+	--heading-margin-bottom-tertiary: 0.25rem;
+
+	--border-radius-primary: 3rem;
+	--border-radius-secondary: 0.5rem;
+
+	--transition-duration-primary: 64ms;
+	--transition-timing-function-primary: linear;
+
+	--product-price-line-height: 2rem;
+	--product-price-old-line-height: 1.5rem;
+}
+
+@media (width < 1024px) {
+	:root {
+		--header-height: 3rem;
+		--bottom-nav-height: 3rem;
+	}
+}
+
+@media (width >= 1024px) {
+	:root {
+		--header-height: 4rem;
+	}
+}

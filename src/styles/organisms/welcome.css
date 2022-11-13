@@ -1,0 +1,98 @@
+@import '../atoms/container.css';
+@import '../molecules/heading-group.css';
+
+.welcome {
+	min-height: calc(100vh - var(--header-height));
+	overflow: hidden;
+}
+
+.welcome__body {
+	position: relative;
+}
+
+.welcome__body::before {
+	content: '';
+	background-image: url(../../img/welcome-decor.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	z-index: -10;
+}
+
+@media (width < 728px) {
+	.welcome__body::before {
+		width: 16rem;
+		height: 10rem;
+		top: 0;
+		right: -3rem;
+	}
+}
+
+@media (728px <= width < 1024px) {
+	.welcome__body::before {
+		width: 30rem;
+		height: 18rem;
+		top: -1rem;
+		right: -3rem;
+	}
+}
+
+@media (1024px <= width < 1440px) {
+	.welcome__body::before {
+		width: 38rem;
+		height: 23rem;
+		top: -2rem;
+		right: 0rem;
+	}
+}
+
+@media (width >= 1440px) {
+	.welcome__body::before {
+		width: 53rem;
+		height: 33rem;
+		top: -2rem;
+		right: -7rem;
+	}
+}
+
+.welcome__body::after {
+	--welcome-body-after-height: 0.125rem;
+
+	content: '';
+	height: var(--welcome-body-after-height);
+	border-radius: var(--welcome-body-after-height);
+	background-color: currentColor;
+	transform: translateX(-50%);
+	position: absolute;
+	left: 50%;
+	z-index: 10;
+}
+
+@media (width < 728px) {
+	.welcome__body::after {
+		width: 9rem;
+		bottom: -1rem;
+	}
+}
+
+@media (728px <= width < 1024px) {
+	.welcome__body::after {
+		width: 21rem;
+		bottom: -11rem;
+	}
+}
+
+@media (1024px <= width < 1440px) {
+	.welcome__body::after {
+		width: 30rem;
+		bottom: -15rem;
+	}
+}
+
+@media (width >= 1440px) {
+	.welcome__body::after {
+		width: 35rem;
+		bottom: -20rem;
+	}
+}

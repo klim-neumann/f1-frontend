@@ -1,0 +1,26 @@
+@import '../molecules/table.css';
+
+.tables-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	gap: var(--heading-margin-bottom-primary);
+}
+
+@media (width < 728px) {
+	.tables-list {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (width >= 728px) {
+	.tables-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.tables-list__heading {
+	margin-bottom: var(--heading-margin-bottom-tertiary);
+}

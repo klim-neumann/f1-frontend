@@ -1,0 +1,25 @@
+@import '../atoms/container.css';
+@import '../atoms/heading.css';
+@import '../molecules/form.css';
+@import '../molecules/socials.css';
+
+.footer {
+	padding: calc(var(--heading-margin-bottom-secondary) * 2) 0;
+	background-color: var(--color-dark-primary);
+}
+
+.footer__body {
+	display: flex;
+	flex-direction: column;
+	row-gap: calc(var(--heading-margin-bottom-secondary) * 2);
+}
+
+.footer__heading {
+	margin-bottom: var(--heading-margin-bottom-secondary);
+}
+
+.footer__text {
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+	color: var(--color-grey-primary);
+}

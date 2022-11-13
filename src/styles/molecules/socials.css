@@ -1,0 +1,20 @@
+@import '../atoms/heading.css';
+
+.socials__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	column-gap: 0.5rem;
+}
+
+.socials__link {
+	color: currentColor;
+	display: flex;
+	align-items: center;
+}
+
+.socials__img {
+	width: 1.5rem;
+	height: 1.5rem;
+}

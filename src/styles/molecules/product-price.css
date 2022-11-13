@@ -1,0 +1,39 @@
+@import '../atoms/product-discount.css';
+
+.product-price {
+	display: inline-flex;
+	flex-direction: column;
+	position: relative;
+	min-height: calc(var(--product-price-line-height) + var(--product-price-old-line-height));
+}
+
+.product-price__total {
+	font-size: 1.5rem;
+	line-height: var(--product-price-line-height);
+}
+
+.product-price__old {
+	color: var(--color-grey-primary);
+	font-size: 1rem;
+	line-height: var(--product-price-old-line-height);
+	font-weight: 300;
+}
+
+
+.product-price--cart .product-price__total {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+.product-price--cart .product-price__old {
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+}
+
+
+.product-price__discount {
+	transform: translateX(100%) translateY(-50%);
+	position: absolute;
+	top: calc(var(--product-price-line-height) / 2);
+	right: -1rem;
+}

@@ -1,0 +1,49 @@
+@import '../molecules/heading-group.css';
+@import '../atoms/heading.css';
+@import '../molecules/form.css';
+
+.auth__body {
+	display: flex;
+}
+
+@media (width < 1024px) {
+	.auth__body {
+		justify-content: center;
+	}
+}
+
+@media (width >= 1024px) {
+	.auth__body {
+		column-gap: 1rem;
+	}
+}
+
+@media (width < 1024px) {
+	.auth__heading-group {
+		display: none;
+	}
+}
+
+.auth__form-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	row-gap: var(--heading-margin-bottom-primary);
+}
+
+@media (width < 1024px) {
+	.auth__form-wrapper {
+		max-width: 32rem;
+	}
+}
+
+@media (width >= 1024px) {
+	.auth__form-wrapper {
+		padding: 0 4rem;
+	}
+}
+
+.auth__link {
+	color: inherit;
+	align-self: center;
+}

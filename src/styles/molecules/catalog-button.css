@@ -1,0 +1,39 @@
+.catalog-button {
+	margin: 0;
+	padding: 0 0.5rem;
+	border: none;
+	background-color: transparent;
+	color: currentColor;
+	cursor: pointer;
+}
+
+@media (width >= 1024px) {
+	.catalog-button {
+		font-size: 1rem;
+		line-height: 1.5rem;
+		font-weight: normal;
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+		column-gap: 0.5rem;
+	}
+}
+
+.catalog-button__img {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.catalog-button[aria-expanded='true'] .catalog-button__img--list {
+	display: none;
+}
+
+.catalog-button[aria-expanded='false'] .catalog-button__img--cross {
+	display: none;
+}
+
+@media (width < 1024px) {
+	.catalog-button__text {
+		display: none;
+	}
+}

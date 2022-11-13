@@ -1,0 +1,63 @@
+@import '../atoms/input.css';
+
+.search {
+	border: 0.125rem solid var(--color-dark-primary);
+	border-radius: var(--border-radius-primary);
+	align-self: center;
+	display: flex;
+	align-items: center;
+}
+
+.search__input {
+	width: 13rem;
+	border-radius: var(--border-radius-primary) 0 0 var(--border-radius-primary);
+}
+
+@media (width < 1024px) {
+	.search__input {
+		width: 10rem;
+	}
+}
+
+@media (width >= 1024px) {
+	.search__input {
+		width: 13rem;
+	}
+}
+
+.search__button {
+	margin: 0;
+	border: none;
+	border-radius: 0 var(--border-radius-primary) var(--border-radius-primary) 0;
+	background-color: var(--color-grey-secondary);
+	display: flex;
+	cursor: pointer;
+	transition: background-color var(--transition-duration-primary) var(--transition-timing-function-primary);
+}
+
+@media (width < 1024px) {
+	.search__button {
+		padding: 0.25rem;
+	}
+}
+
+@media (width >= 1024px) {
+	.search__button {
+		padding: 0.5rem;
+	}
+}
+
+.search__button:hover {
+	background-color: var(--color-grey-primary);
+}
+
+.search__button::before {
+	content: '';
+	width: 1.5rem;
+	height: 1.5rem;
+	mask-image: url(../../img/search.svg);
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	background-color: currentColor;
+}

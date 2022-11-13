@@ -1,0 +1,26 @@
+.table {
+	width: 100%;
+}
+
+.table__body {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+}
+
+.table__row {
+	width: 100%;
+	border-bottom: 0.0625rem solid currentColor;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.table__heading {
+	padding: 0;
+}
+
+.table__data {
+	padding: 0;
+}

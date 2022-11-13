@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body class="page__body">
+	<header class="header page__header">
+		<div class="container">
+			<div class="header__body">
+				<a class="logo header__logo" href="#" aria-current="false" aria-label="домашняя страница">
+					<img class="logo__img" src="../../img/logo.svg" alt="">
+				</a>
+				<button class="catalog-button header__catalog-button" id="header__catalog-button" type="button" aria-expanded="false" aria-controls="page__catalog" aria-label="каталог">
+					<svg class="catalog-button__img catalog-button__img--list" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M6.44444 2H18M6.44444 7.5H18M6.44444 13H18M2 2H2.00933M2 7.5H2.00933M2 13H2.00933" stroke="currentColor"
+							stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+					<svg class="catalog-button__img catalog-button__img--cross" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18 2L2 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+						<path d="M2 2L18 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+					<span class="catalog-button__text">Каталог</span>
+				</button>
+				<form class="search header__search" action="#" method="get">
+					<input class="input input--tertiary search__input" type="text" inputmode="search" placeholder="Поиск по каталогу" required aria-label="поиск по каталогу">
+					<button class="search__button" aria-label="найти"></button>
+				</form>
+				<nav class="nav header__nav">
+					<ul class="nav__list nav__list--mobile-display-none">
+						<li class="nav__item">
+							<a class="nav__link" href="#" aria-current="false" aria-label="о нас">О нас</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#" aria-current="false" aria-label="отзывы">Отзывы</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#" aria-current="false" aria-label="контакты">Контакты</a>
+						</li>
+					</ul>
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a class="nav__link nav__link--cart" href="#" aria-current="false" aria-label="корзина">Корзина</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link nav__link--user" href="#" aria-current="false" aria-label="войти">Войти</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<aside class="catalog page__catalog" id="page__catalog">
+		<div class="container">
+			<div class="catalog__body">
+				<ul class="catalog__list">
+					<li class="catalog__item">
+						<button class="catalog__button" type="button" aria-expanded="false" aria-controls="catalog__nav-0" aria-label="категория">Игровые компьютеры</button>
+						<nav class="catalog__nav" id="catalog__nav-0">
+							<ul class="catalog__list catalog__list--nested">
+								<li class="catalog__item">
+									<a class="catalog__link" href="#" aria-current="false" aria-label="">Офисные компьютеры</a>
+								</li>
+								<li class="catalog__item">
+									<a class="catalog__link" href="#" aria-current="false" aria-label="">Игровые компьютеры</a>
+								</li>
+							</ul>
+						</nav>
+					</li>
+					<li class="catalog__item">
+						<button class="catalog__button" type="button" aria-expanded="false" aria-controls="catalog__nav-1" aria-label="категория">Игровые компьютеры</button>
+						<nav class="catalog__nav" id="catalog__nav-1">
+							<ul class="catalog__list catalog__list--nested">
+								<li class="catalog__item">
+									<a class="catalog__link" href="#" aria-current="false" aria-label="">Офисные компьютеры</a>
+								</li>
+								<li class="catalog__item">
+									<a class="catalog__link" href="#" aria-current="false" aria-label="">Игровые компьютеры</a>
+								</li>
+							</ul>
+						</nav>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</aside>
+	<main class="page__main">
+		<section class="auth">
+			<div class="container">
+				<div class="auth__body">
+					<article class="heading-group heading-group--max-width-primary auth__heading-group">
+						<h1 class="heading">F1.comp лучшие товары для геймера</h1>
+						<p class="subheading">F1.comp интернет магазин по продаже комплектущих для ПК,  игровых компьютеров и переферии для настоящего геймера.</p>
+					</article>
+					<div class="auth__form-wrapper">
+						<h2 class="heading heading--secondary heading--align-center">Вход</h2>
+						<form class="form" action="#" method="get">
+							<input class="input" type="text" inputmode="email" placeholder="E-mail" pattern="^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" required aria-label="электронная почта">
+							<input class="input" type="password" placeholder="Пароль" required aria-label="пароль">
+							<button class="button form__button" aria-label="войти">Войти</button>
+						</form>
+						<a class="auth__link" href="#">Нет аккаунта? Зарегистрируйтесь!</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="partners">
+			<div class="container">
+				<div class="partners__body">
+					<h2 class="heading heading--secondary heading--align-center partners__heading">Мы официальные дистрибьюторы</h2>
+					<ul class="partners__list">
+						<li class="partners__item">
+							<img class="partners__img" src="../../img/dark-flash.png" alt="darkFlash">
+						</li>
+						<li class="partners__item">
+							<img class="partners__img" src="../../img/victorage.png" alt="Victorage">
+						</li>
+						<li class="partners__item">
+							<img class="partners__img" src="../../img/fuhlen.png" alt="Fuhlen">
+						</li>
+						<li class="partners__item">
+							<img class="partners__img" src="../../img/xiberia.png" alt="Xiberia">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="offers">
+			<div class="container">
+				<div class="offers__body">
+					<h2 class="heading heading--tertiary offers__heading">Новинки</h2>
+					<ul class="products-list">
+						<li class="products-list__item">
+							<article class="product-card products-list__product-card">
+								<span class="product-discount product-card__discount">-20%</span>
+								<img class="product-card__img" src="../../img/product-card-demo.png" alt="">
+								<h3 class="heading heading--quaternary product-card__heading">
+									<a class="product-card__link" href="#" aria-current="false" aria-label="">Игровой компьютер PBA Neo Game 92309LC (Ci9-11900F 2,5GHz/32GB/500GB/6TB/RTX3070Ti 8Gb/MACUBE 310P)</a>
+								</h3>
+								<div class="product-card__price-wrapper">
+									<strong class="product-price">1 399 990 ₸</strong>
+									<s class="product-price--old">1 732 590 ₸</s>
+								</div>
+							</article>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__body">
+				<div>
+					<h2 class="heading heading--tertiary footer__heading">Будьте в курсе новостей</h2>
+					<form class="form form--secondary" action="#" method="post">
+						<input class="input input--secondary" type="text" inputmode="email" placeholder="Введите e-mail" pattern="^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$" required aria-label="электронная почта">
+						<button class="button button--secondary" aria-label="подписаться">Подписаться</button>
+					</form>
+				</div>
+				<div class="socials">
+					<h2 class="heading heading--tertiary footer__heading">Мы в соцсетях</h2>
+					<ul class="socials__list">
+						<li class="socials__item">
+							<a class="socials__link" href="#" aria-label="">
+								<svg class="socials__img" data-src="../../img/instagram.svg"></svg>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" href="#" aria-label="">
+								<svg class="socials__img" data-src="../../img/whatsapp.svg"></svg>
+							</a>
+						</li>
+						<li class="socials__item">
+							<a class="socials__link" href="#" aria-label="">
+								<svg class="socials__img" data-src="../../img/telegram.svg"></svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<small class="footer__text">ТОО “F1.comp” 2022 год</small>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

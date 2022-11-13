@@ -1,0 +1,44 @@
+.select {
+	--select-label-padding: 0.25rem 0.5rem;
+
+	color: var(--color-dark-primary);
+	font-size: 1rem;
+	line-height: 1.5rem;
+	position: relative;
+	display: inline-flex;
+}
+
+.select__label {
+	padding: var(--select-label-padding);
+	border-radius: var(--border-radius-secondary) 0 0 var(--border-radius-secondary);
+	background-color: var(--color-grey-secondary);
+}
+
+.select__list {
+	margin: 0;
+	border: none;
+	appearance: none;
+	width: 12rem;
+	padding: var(--select-label-padding);
+	border-radius: 0 var(--border-radius-secondary) var(--border-radius-secondary) 0;
+	background-color: var(--color-light-primary);
+	font-size: inherit;
+	line-height: inherit;
+	cursor: pointer;
+}
+
+.select::after {
+	content: '';
+	width: 0.75rem;
+	height: 0.75rem;
+	background-color: currentColor;
+	mask-image: url(../../img/angle-right.svg);
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	transform: rotateZ(90deg) translateX(-50%);
+	position: absolute;
+	top: 50%;
+	right: 0.25rem;
+	z-index: 10;
+}

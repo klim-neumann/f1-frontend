@@ -1,0 +1,55 @@
+@import '../atoms/container.css';
+@import '../molecules/logo.css';
+@import '../molecules/catalog-button.css';
+@import '../molecules/search.css';
+@import '../molecules/nav.css';
+
+.header {
+	background-color: var(--color-light-secondary);
+	color: var(--color-dark-primary);
+}
+
+.header__body {
+	height: var(--header-height);
+	display: flex;
+}
+
+@media (width < 1024px) {
+	.header__body {
+		justify-content: space-between;
+	}
+}
+
+@media (width >= 1024px) {
+	.header__logo {
+		margin-right: 1rem;
+	}
+}
+
+@media (width < 1024px) {
+	.header__catalog-button {
+		order: 3;
+	}
+}
+
+@media (width >= 1024px) {
+	.header__catalog-button {
+		margin-right: 5rem;
+	}
+}
+
+@media (width < 1024px) {
+	.header__nav {
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		z-index: 10;
+	}
+}
+
+@media (width >= 1024px) {
+	.header__nav {
+		margin-left: auto;
+	}
+}

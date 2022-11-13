@@ -1,0 +1,10 @@
+.product-discount {
+	padding: 0 0.25rem;
+	border-radius: var(--border-radius-secondary);
+	background-color: var(--color-light-primary);
+	color: var(--color-dark-primary);
+	font-size: 0.875rem;
+	line-height: 1.5rem;
+	font-weight: 700;
+	display: inline-block;
+}
